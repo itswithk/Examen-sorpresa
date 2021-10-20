@@ -1,0 +1,51 @@
+.carousel {
+    max-width: 50%;
+    height: auto;
+    
+}
+
+.carousel, .carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    object-fit: contain;
+    
+}
+
+.contenedor {
+    background-color: black;
+
+}
+
+.imagenes-container {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.imagenes-container img {
+-moz-transition: all 0.8s;
+-webkit-transition: all 0.8s;
+transition: all 0.8s;
+width: 100%;
+height: 350px;
+cursor: pointer;
+
+}
+
+.imagenes-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.imagenes-details {
+    position: absolute;
+    bottom: 25px;
+    left: 28px;
+z-index: 100;
+color: #ffffff;
+background-color: #00000090;
+}
+

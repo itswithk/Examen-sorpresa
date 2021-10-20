@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Ghibli World</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img widht="100" height="50" class="logo" src="./assets/img/logopng.png" alt="logoSG"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto text-center ml-4">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="movies.html">Movies</a>
+              </li>
+            </ul>
+            <div class="login d-flex flex-row justify-content-center align-middle">
+              <div class="iconodetails">
+                <a class="nav-link" href="https://www.facebook.com/studioghiblijapan/">
+                  <img width="25px" src="./assets/img/facebook-circle-logo-120.png" alt="face"/></a>
+              </div>
+              <div class="iconodetails">
+                <a class="nav-link" href="https://www.instagram.com/hayaomiyazaki/?hl=es-la">
+                  <img width="25px" src="./assets/img/instagram-logo-120.png" alt="insta"/></a>
+              </div>
+              <div class="iconodetails">
+                  <a class="nav-link" href="https://twitter.com/JP_GHIBLI">
+                    <img width="25px" src="./assets/img/twitter-logo-120.png" alt="twitter"/></a>
+                </div>
+            </div>
+            <div class="login d-flex flex-row justify-content-center mt-3">
+              <div class="iconodetails">
+                <a id="login1" class="nav-link" href="#">
+                  <img onmouseover="show()" onmouseout="show()" width="25px" src="./assets/img/user-circle-solid-120.png" alt="user"
+                /></a>
+                <p id="textLogin" >Login</p>
+              </div>
+              <div class="iconodetails">
+                <a id="login2" class="nav-link" href="#">
+                  <img onmouseover="show2()" onmouseout="show2()" width="25px" src="./assets/img/log-out-circle-regular-120.png" alt=""
+                /></a>
+                <p id="textLogout" >Logout</p>
+              </div>
+  
+              <div class="iconodetails">
+                <p id="loginUser" class="nav-user"></p>
+          </div>
+        </div>
+      </nav>
+
+      <section>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="imgcarrusel"
+                src="./assets/img/chihiro.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>CHIHIRO</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="imgcarrusel"
+                src="./assets/img/mononoke.jpg"
+                class="d-block w-90"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>PRINCESS MONONOKE</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="imgcarrusel"
+                src="./assets/img/kiki.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>KIKI</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="imgcarrusel"
+                src="./assets/img/sophie.jpg"
+                class="d-block w-90"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>SOPHIE</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+  
+      <section
+        class="
+          personajes
+          py-2
+          text-center text-sm-center text-md-center text-lg-center text-xl-center
+        "
+      >
+        <div class="container-fluid">
+          <img
+            src="./assets/img/logopng.png"
+            alt="SG logo"
+            width="181"
+            class="img-fluid mx-auto py-5"
+          />
+          <p class="py-3">
+            El Studio Ghibli (スタジオジブリ Sutajio Jiburi?) es un estudio de animación japonés, con sede en Tokio. Fue fundada en 1985 por Hayao Miyazaki y Isao Takahata, y a día de hoy, han realizado más de 20 películas, además de otras clases de trabajos (cortometrajes, anuncios publicitarios, ...). Tienen el respeto del público japonés y también el internacional, donde la crítica y el sector de la animación le presenta muchos respetos. Debido a su popularidad, se abrió el Museo Ghibli, el cual se encuentra a las afueras de Tokio y para el 2022 se espera tener listo el Ghibli Park. </p>
+            
+             <br> 
+             
+            <p> El nombre de Ghibli se basa en el nombre arábico del siroco, o viento mediterráneo, que fue utilizado por los italianos para nombrar a sus aviones de exploración del Sahara en la Segunda Guerra Mundial. La teoría de este nombre, sería que ellos están «Soplando» un nuevo aire dentro de la industria de la animación.
+          </p>
+  
+        </div>
+      </section>
+  
+      <section class="contenedor container-fluid p-5">
+        <h1 style="padding: 15px" class="text-white text-center">La belleza de Ghibli</h1>
+  
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="imagenes-container">
+              <div class="imagenes-details">
+                <h2>Escenario Ghibli</h2>
+              </div>
+  
+              <img src="./assets/img/wall1.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-sm-6">
+            <div class="imagenes-container">
+              <div class="imagenes-details">
+                <h2>Escenario Ghibli</h2>
+              </div>
+  
+              <img src="./assets/img/wall2.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="imagenes-container">
+              <div class="imagenes-details">
+                <h2>Escenario Ghibli</h2>
+              </div>
+  
+              <img src="./assets/img/wall3.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-sm-6">
+            <div class="imagenes-container">
+              <div class="imagenes-details">
+                <h2>Escenario Ghibli</h2>
+              </div>
+  
+              <img src="./assets/img/wall4.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="./assets/js/script.js"></script>
+</body>
+</html>
